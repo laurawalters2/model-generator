@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create:model": "cd package && node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/laurawalters2/model-generator/issues"
   },
-  "homepage": "https://github.com/laurawalters2/model-generator#readme"
+  "homepage": "https://github.com/laurawalters2/model-generator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "minimist": "^1.2.6"
+  }
 }
