@@ -1,0 +1,25 @@
+{
+  "name": "model-generator",
+  "version": "1.0.0",
+  "description": "generates boiler-plate model files for mern stack",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurawalters2/model-generator.git"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "laurawalters1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurawalters2/model-generator/issues"
+  },
+  "homepage": "https://github.com/laurawalters2/model-generator#readme"
+}

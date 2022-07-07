@@ -1,1 +1,1 @@
-# model-generator
+# model-generator-npm-package
