@@ -1,4 +1,35 @@
 const argv = require("minimist")(process.argv.slice(2));
+const fs = require("fs");
 const { npm_config_name: name } = process.env;
 
-console.log(name);
+const data = `
+const { Schema, model } = require("mongoose");
+
+const moment = require("moment");
+
+const ${name}Schema = new Schema(
+  {
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
+  },
+  {
+    toJSON: {
+      virtuals: true,
+    },
+  }
+);
+
+
+const ${name} = model("${name}", ${name}Schema);
+
+module.exports = ${name};
+`;
+
+fs.writeFile(`./models/${name}.js`, data, (err) => {
+	if (err) {
+		console.error(err);
+	}
+	// file written successfully
+});
