@@ -7,7 +7,7 @@ const { Schema, model } = require("mongoose");
 
 const moment = require("moment");
 
-const ${name}Schema = new Schema(
+const ${name.toLowerCase()}Schema = new Schema(
   {
     createdAt: {
       type: Date,
@@ -22,7 +22,7 @@ const ${name}Schema = new Schema(
 );
 
 
-const ${name} = model("${name}", ${name}Schema);
+const ${name} = model("${name}", ${name.toLowerCase()}Schema);
 
 module.exports = ${name};
 `;
