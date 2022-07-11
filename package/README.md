@@ -13,6 +13,8 @@ npm run create:model -name=User
 ```
 
 The file will be located in the models folder, if a models folder does not already exist, one will be created
+<br>
+<br>
 Output:
 
 ```javascript
