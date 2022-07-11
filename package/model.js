@@ -27,7 +27,7 @@ const ${name} = model("${name}", ${name.toLowerCase()}Schema);
 module.exports = ${name};
 `;
 
-fs.writeFile(`../../models/${name}.js`, data, (err) => {
+fs.writeFile(`./models/${name}.js`, data, (err) => {
 	if (err) {
 		console.error(err);
 	}
