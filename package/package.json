@@ -1,5 +1,5 @@
 {
-  "name": "model-generator",
+  "name": "mern-model-generator",
   "version": "1.0.0",
   "description": "generates boiler-plate model files for mern stack",
   "main": "index.js",
