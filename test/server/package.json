@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mern-model-generator": "^1.0.0",
     "moment": "^2.29.4"
   }
 }
