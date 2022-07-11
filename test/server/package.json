@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create:model": "cd node_modules && cd model-generator && npm run create:model"
+    "create:model": "cd node_modules && cd mern-model-generator && npm run create:model"
   },
   "keywords": [],
   "author": "",
