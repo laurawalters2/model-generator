@@ -27,6 +27,10 @@ const ${name} = model("${name}", ${name.toLowerCase()}Schema);
 module.exports = ${name};
 `;
 
+if (!fs.existsSync("../../models")) {
+	fs.mkdirSync("../../models");
+}
+
 fs.writeFile(`./models/${name}.js`, data, (err) => {
 	if (err) {
 		console.error(err);

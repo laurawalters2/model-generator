@@ -6,8 +6,6 @@ Add the following script to your server package.json
 }
 ```
 
-Create a models folder in your server folder (if one doesn't already exist)
-
 Run the following command in the server directory to generate a mern model (replace 'User' with your model name)
 
 ```javascript
