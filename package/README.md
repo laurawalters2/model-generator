@@ -6,7 +6,7 @@ Add the following script to your server package.json
 }
 ```
 
-Run the following command in the server directory to generate a mern model (replace 'User' with your model name)
+Run the following command in the server directory to generate a template mern model (replace 'User' with your model name)
 
 ```javascript
 npm run create:model -name=User
