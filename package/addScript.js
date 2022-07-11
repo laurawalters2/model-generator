@@ -15,9 +15,13 @@ fs.readFile("../../package.json", "utf8", (err, data) => {
 	console.log("test");
 	parsedData.scripts["create:model"] =
 		"cd node_modules && cd mern-model-generator && npm run create:model";
-	fs.writeFile("../../package.json", JSON.stringify(parsedData), (err) => {
-		if (err) {
-			console.log(err);
+	fs.writeFile(
+		"../../package.json",
+		JSON.stringify(parsedData, null, 4),
+		(err) => {
+			if (err) {
+				console.log(err);
+			}
 		}
-	});
+	);
 });
