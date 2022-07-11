@@ -1,12 +1,13 @@
 {
   "name": "mern-model-generator",
-  "version": "1.0.11",
+  "version": "1.0.34",
   "description": "generates boiler-plate model files for mern stack",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "postinstall": "node addScript.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "create:model": "node index.js && cd ../../ && npm i moment"
   },
